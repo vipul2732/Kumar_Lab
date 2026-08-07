@@ -11,9 +11,3 @@
 .research-media video{object-fit:cover;padding:0;background:#0a0e15}
 .research-media.compact img{width:82%;height:82%;padding:0}
 @media(max-width:850px){.scale-visual{max-width:100%;margin-left:0}.scale-visual img{height:150px}.research-media{height:150px}}
-
-/* V4 homepage scale banner */
-.hero-v2{grid-template-columns:.9fr 1.1fr}
-.scale-banner{width:100%;display:flex;align-items:center;justify-content:center}
-.scale-banner img{display:block;width:100%;height:auto;max-height:360px;object-fit:contain;border-radius:12px}
-@media(max-width:850px){.hero-v2{grid-template-columns:1fr}.scale-banner img{max-height:none}}
