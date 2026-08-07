@@ -62,8 +62,13 @@
 
 /* V3.3: single-boundary scientific hero graphic */
 .hero-v32 .hero-banner-wide{
-  max-width:1190px;
+  max-width:1180px;
 }
 .hero-v32 .hero-banner-wide img{
-  border-radius:12px;
+  border-radius:10px;
+}
+
+/* V3.4: text-only homepage hero */
+.hero-v32 .hero-copy{
+  margin-bottom:0;
 }
