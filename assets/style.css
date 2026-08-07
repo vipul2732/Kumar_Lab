@@ -72,3 +72,33 @@
 .hero-v32 .hero-copy{
   margin-bottom:0;
 }
+
+/* V3.5: complete year-wise publications */
+.publications-page{max-width:1050px}
+.pub-jump{display:flex;gap:12px;flex-wrap:wrap;margin:35px 0 65px}
+.pub-jump a{font-size:13px;font-weight:750;color:var(--blue);text-decoration:none;border:1px solid var(--line);padding:9px 13px;border-radius:999px;background:#fff}
+.publication-section{scroll-margin-top:110px}
+.section-heading{border-bottom:2px solid var(--ink);padding-bottom:15px;margin-bottom:12px}
+.section-heading h2{margin:0;font-size:31px}
+.pub-year{display:grid;grid-template-columns:115px 1fr;gap:35px;border-bottom:1px solid var(--line);padding:42px 0}
+.pub-year>h2{font-family:Georgia,serif;font-size:35px;color:var(--blue);margin:0}
+.pub-year-list{display:grid;gap:0}
+.pub-entry{padding:0 0 27px;margin:0 0 27px;border-bottom:1px solid #edf0f4}
+.pub-entry:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.pub-entry h3,.pub-status-entry h3{font-size:17px;line-height:1.4;margin:0 0 7px;color:var(--ink)}
+.pub-entry p,.pub-status-entry p{margin:3px 0;color:#526075;font-size:14px}
+.pub-authors strong,.pub-status-entry strong{color:var(--ink)}
+.pub-venue i{color:#39495f}
+.pub-note{font-size:12px;color:#7a8797;margin-top:6px}
+.secondary-pubs{margin-top:85px}
+.pub-status-list{border-top:1px solid var(--line)}
+.pub-status-entry{display:grid;grid-template-columns:90px 1fr;gap:25px;padding:25px 0;border-bottom:1px solid var(--line)}
+.pub-status-entry>span{font-weight:800;color:var(--blue)}
+.publication-footer{margin-top:65px;padding:28px;background:var(--wash);display:flex;align-items:center;justify-content:space-between;gap:25px}
+.publication-footer p{margin:0;color:#536176}
+@media(max-width:700px){
+ .pub-year{grid-template-columns:1fr;gap:12px;padding:32px 0}
+ .pub-year>h2{font-size:30px}
+ .pub-status-entry{grid-template-columns:1fr;gap:5px}
+ .publication-footer{align-items:flex-start;flex-direction:column}
+}
