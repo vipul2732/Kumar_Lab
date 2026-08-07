@@ -11,3 +11,8 @@
 .research-media video{object-fit:cover;padding:0;background:#0a0e15}
 .research-media.compact img{width:82%;height:82%;padding:0}
 @media(max-width:850px){.scale-visual{max-width:100%;margin-left:0}.scale-visual img{height:150px}.research-media{height:150px}}
+
+/* V3.1: single compact hero research-scale banner */
+.scale-visual.scale-banner{display:flex;max-width:600px;margin-left:auto;align-items:center;justify-content:center}
+.scale-visual.scale-banner img{width:100%;height:auto;max-height:300px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px}
+@media(max-width:850px){.scale-visual.scale-banner{max-width:620px;margin:10px auto 0}.scale-visual.scale-banner img{height:auto;max-height:none}}
