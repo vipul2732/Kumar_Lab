@@ -16,3 +16,46 @@
 .scale-visual.scale-banner{display:flex;max-width:600px;margin-left:auto;align-items:center;justify-content:center}
 .scale-visual.scale-banner img{width:100%;height:auto;max-height:300px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px}
 @media(max-width:850px){.scale-visual.scale-banner{max-width:620px;margin:10px auto 0}.scale-visual.scale-banner img{height:auto;max-height:none}}
+
+
+/* V3.2: larger, tighter hero banner with minimal white space */
+.hero-v32{
+  display:block;
+  max-width:var(--max);
+  margin:auto;
+  padding:68px 28px 52px;
+}
+.hero-v32 .hero-copy{
+  max-width:920px;
+  margin:0 auto 34px;
+  text-align:center;
+}
+.hero-v32 .hero-copy .lead{
+  margin-left:auto;
+  margin-right:auto;
+}
+.hero-v32 .actions{
+  justify-content:center;
+}
+.hero-v32 .hero-banner-wide{
+  max-width:1080px;
+  width:100%;
+  margin:0 auto;
+  display:block;
+}
+.hero-v32 .hero-banner-wide img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+  padding:0;
+  border:0;
+  border-radius:8px;
+  background:transparent;
+}
+@media(max-width:850px){
+  .hero-v32{padding:52px 18px 40px}
+  .hero-v32 .hero-copy{margin-bottom:26px}
+  .hero-v32 .hero-banner-wide{max-width:100%}
+}
