@@ -75,7 +75,14 @@ footer{border-top:1px solid var(--line);background:var(--wash);padding:28px max(
 .research-media img,.research-media video{display:block;width:100%;height:100%;object-fit:contain;padding:8px}
 .research-media video{object-fit:cover;padding:0;background:#0a0e15}
 .research-media.compact img{width:82%;height:82%;padding:0}
-@media(max-width:850px){.research-media{height:150px}}
+.home-research{padding-top:20px;padding-bottom:40px}
+.research-list-media article>div{min-width:0}
+.research-media-lg{height:220px;margin:0 0 22px;border:1px solid var(--line);border-radius:3px}
+.research-media-lg.compact img{width:70%;height:70%;padding:0}
+@media(max-width:850px){
+  .research-media{height:150px}
+  .research-media-lg{height:180px}
+}
 
 /* Home: Dhanjal-like welcome + updates + contact */
 .hero-v32{display:block;max-width:var(--max);margin:auto;padding:68px 28px 28px}
