@@ -82,7 +82,8 @@ footer{border-top:1px solid var(--line);background:var(--wash);padding:28px max(
 .hero-v32 .hero-copy{max-width:920px;margin:0 auto;text-align:center}
 .hero-v32 .hero-copy .lead{margin-left:auto;margin-right:auto}
 .hero-v32 .actions{justify-content:center}
-.home-grid{max-width:var(--max);margin:0 auto;padding:28px 28px 70px;display:grid;grid-template-columns:1.4fr .85fr;gap:40px;align-items:start}
+.inst-logo{display:block;width:96px;height:auto;margin:0 auto 22px;object-fit:contain}
+.home-grid{max-width:var(--max);margin:0 auto;padding:28px 28px 90px;display:grid;grid-template-columns:1.4fr .85fr;gap:40px;align-items:start}
 .updates-panel,.contact-panel{border:1px solid var(--line);background:#fff;padding:28px 30px}
 .updates-panel h2,.contact-panel h2{font-size:26px;margin:0 0 22px}
 .update-card{padding:0 0 22px;margin:0 0 22px;border-bottom:1px solid var(--line)}
