@@ -77,25 +77,38 @@ footer{border-top:1px solid var(--line);background:var(--wash);padding:28px max(
 .research-media.compact img{width:82%;height:82%;padding:0}
 @media(max-width:850px){.research-media{height:150px}}
 
-/* Research page: stacked theme blocks, no cropped media */
-.research-page{max-width:980px}
-.research-themes{margin-top:60px;display:grid;gap:55px}
-.research-theme{display:grid;gap:22px;padding-bottom:55px;border-bottom:1px solid var(--line)}
-.research-theme:last-child{border-bottom:0;padding-bottom:0}
-.research-theme-copy{max-width:760px}
+/* Research page: text left, media right, no frames */
+.research-page{max-width:1100px}
+.research-themes{margin-top:60px;display:grid;gap:0}
+.research-theme{
+  display:grid;
+  grid-template-columns:minmax(280px,1fr) minmax(280px,1.05fr);
+  gap:48px;
+  align-items:center;
+  padding:48px 0;
+  border-bottom:1px solid var(--line);
+}
+.research-theme:last-child{border-bottom:0}
+.research-theme-copy{max-width:520px}
 .theme-num{display:block;font-family:"Libre Baskerville",Georgia,serif;font-size:28px;color:#98a8ba;margin-bottom:8px}
-.research-theme h2{font-family:"Libre Baskerville",Georgia,serif;font-size:30px;font-weight:500;margin:0 0 12px}
-.research-theme-copy p{margin:0;color:#536176;font-size:17px;line-height:1.6}
-.theme-media{margin:0;padding:18px;background:var(--wash);border:1px solid var(--line);border-radius:4px}
-.theme-media img,.theme-media video{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;margin:0 auto;background:#fff}
-.theme-media-video{background:#0d1520;border-color:#1a2433}
-.theme-media-video video{max-height:460px;background:#0d1520}
-.theme-media-network img{max-width:560px;max-height:440px;image-rendering:auto}
-.theme-media figcaption{margin-top:12px;font-size:13px;color:#7a8797;text-align:center}
+.research-theme h2{font-family:"Libre Baskerville",Georgia,serif;font-size:28px;font-weight:500;margin:0 0 14px;line-height:1.2}
+.research-theme-copy p{margin:0;color:#536176;font-size:16px;line-height:1.65}
+.theme-media{margin:0;padding:0;background:transparent;border:0}
+.theme-media img,.theme-media video{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:340px;
+  object-fit:contain;
+  object-position:center;
+  background:transparent;
+}
+.theme-media-video video{max-height:360px}
+.theme-media-network img{max-width:100%;max-height:320px}
 @media(max-width:850px){
-  .research-theme h2{font-size:26px}
-  .theme-media{padding:12px}
-  .theme-media img,.theme-media video{max-height:320px}
+  .research-theme{grid-template-columns:1fr;gap:22px;padding:36px 0}
+  .research-theme h2{font-size:24px}
+  .theme-media img,.theme-media video{max-height:280px}
 }
 
 /* Home: Dhanjal-like welcome + updates + contact */
