@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=4.3">
+  <link rel="stylesheet" href="assets/style.css?v=4.4">
 </head>
 <body>
 <header>
@@ -23,53 +23,60 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<main class="page">
+<main class="page research-page">
   <p class="eyebrow">RESEARCH</p>
   <h1>Understanding biomolecular systems across scales.</h1>
   <p class="lead narrow">LBSD combines structural modeling, simulation, integrative inference, and data-driven approaches to connect molecular architecture with dynamics, interactions, and biological function.</p>
 
-  <div class="research-list research-list-media">
-    <article>
-      <b>01</b>
-      <div>
-        <div class="research-media research-media-lg">
-          <video autoplay muted loop playsinline preload="metadata" aria-label="Molecular dynamics trajectory of an SLC6A12 transporter system">
-            <source src="assets/images/slc612-histidine.mp4" type="video/mp4">
-          </video>
-        </div>
+  <div class="research-themes">
+    <article class="research-theme">
+      <div class="research-theme-copy">
+        <span class="theme-num">01</span>
         <h2>Biomolecular Structure & Dynamics</h2>
         <p>We investigate conformational states, molecular recognition, stability, and dynamics of proteins and biomolecular complexes using computational structural biology and molecular simulations.</p>
       </div>
+      <figure class="theme-media theme-media-video">
+        <video autoplay muted loop playsinline preload="metadata" controls aria-label="Molecular dynamics trajectory of an SLC6A12 transporter system">
+          <source src="assets/images/slc612-histidine.mp4" type="video/mp4">
+        </video>
+        <figcaption>Molecular dynamics trajectory of an SLC6A12 transporter system</figcaption>
+      </figure>
     </article>
-    <article>
-      <b>02</b>
-      <div>
-        <div class="research-media research-media-lg compact">
-          <img src="assets/images/integrative-modeling.png" alt="Convolutional neural network architecture for structural modeling">
-        </div>
+
+    <article class="research-theme">
+      <div class="research-theme-copy">
+        <span class="theme-num">02</span>
         <h2>Integrative & Data-Driven Structural Biology</h2>
         <p>We aim to combine heterogeneous structural and systems-level information—including cryo-EM, XL-MS, proteomics, interaction networks, comparative models, and AI-based predictions—within probabilistic modeling frameworks.</p>
       </div>
+      <figure class="theme-media">
+        <img src="assets/images/integrative-modeling.png" alt="Convolutional neural network architecture for structural modeling">
+        <figcaption>Data-driven approaches for structural modeling</figcaption>
+      </figure>
     </article>
-    <article>
-      <b>03</b>
-      <div>
-        <div class="research-media research-media-lg">
-          <img src="assets/images/molecular-recognition.png" alt="Protein–ligand interaction and binding-site view">
-        </div>
+
+    <article class="research-theme">
+      <div class="research-theme-copy">
+        <span class="theme-num">03</span>
         <h2>Molecular Discovery & Design</h2>
         <p>We apply structure-based approaches to characterize ligand recognition and identify molecular modulators, while exploring AI/ML strategies for drug–target interaction and molecular discovery problems.</p>
       </div>
+      <figure class="theme-media">
+        <img src="assets/images/molecular-recognition.png" alt="Protein–ligand interaction and binding-site view">
+        <figcaption>Structure-based views of molecular recognition</figcaption>
+      </figure>
     </article>
-    <article>
-      <b>04</b>
-      <div>
-        <div class="research-media research-media-lg">
-          <img src="assets/images/hero-scales.png" alt="Biomolecular organization across molecular to network scales">
-        </div>
+
+    <article class="research-theme">
+      <div class="research-theme-copy">
+        <span class="theme-num">04</span>
         <h2>Methods Across Scales</h2>
         <p>A long-term goal is to develop computational methods that bridge atomic structures, macromolecular assemblies, and systems-level interaction data to generate predictive models of biological organization.</p>
       </div>
+      <figure class="theme-media theme-media-network">
+        <img src="assets/images/network-interactions.png" alt="Protein interaction network centered on SMAD4 and COL2A1">
+        <figcaption>Interaction networks linking molecular assemblies to systems-level organization</figcaption>
+      </figure>
     </article>
   </div>
 </main>

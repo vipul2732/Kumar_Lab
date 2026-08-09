@@ -73,15 +73,29 @@ footer{border-top:1px solid var(--line);background:var(--wash);padding:28px max(
 .research-cards article{padding:0 26px 28px;overflow:hidden}
 .research-media{height:132px;margin:0 -26px 22px;background:#f7f9fc;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .research-media img,.research-media video{display:block;width:100%;height:100%;object-fit:contain;padding:8px}
-.research-media video{object-fit:cover;padding:0;background:#0a0e15}
+.research-media video{object-fit:contain;padding:0;background:#0a0e15}
 .research-media.compact img{width:82%;height:82%;padding:0}
-.home-research{padding-top:20px;padding-bottom:40px}
-.research-list-media article>div{min-width:0}
-.research-media-lg{height:220px;margin:0 0 22px;border:1px solid var(--line);border-radius:3px}
-.research-media-lg.compact img{width:70%;height:70%;padding:0}
+@media(max-width:850px){.research-media{height:150px}}
+
+/* Research page: stacked theme blocks, no cropped media */
+.research-page{max-width:980px}
+.research-themes{margin-top:60px;display:grid;gap:55px}
+.research-theme{display:grid;gap:22px;padding-bottom:55px;border-bottom:1px solid var(--line)}
+.research-theme:last-child{border-bottom:0;padding-bottom:0}
+.research-theme-copy{max-width:760px}
+.theme-num{display:block;font-family:"Libre Baskerville",Georgia,serif;font-size:28px;color:#98a8ba;margin-bottom:8px}
+.research-theme h2{font-family:"Libre Baskerville",Georgia,serif;font-size:30px;font-weight:500;margin:0 0 12px}
+.research-theme-copy p{margin:0;color:#536176;font-size:17px;line-height:1.6}
+.theme-media{margin:0;padding:18px;background:var(--wash);border:1px solid var(--line);border-radius:4px}
+.theme-media img,.theme-media video{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;margin:0 auto;background:#fff}
+.theme-media-video{background:#0d1520;border-color:#1a2433}
+.theme-media-video video{max-height:460px;background:#0d1520}
+.theme-media-network img{max-width:560px;max-height:440px;image-rendering:auto}
+.theme-media figcaption{margin-top:12px;font-size:13px;color:#7a8797;text-align:center}
 @media(max-width:850px){
-  .research-media{height:150px}
-  .research-media-lg{height:180px}
+  .research-theme h2{font-size:26px}
+  .theme-media{padding:12px}
+  .theme-media img,.theme-media video{max-height:320px}
 }
 
 /* Home: Dhanjal-like welcome + updates + contact */
