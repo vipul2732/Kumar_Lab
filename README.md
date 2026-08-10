@@ -2,8 +2,6 @@
 
 Static GitHub Pages website for the In Silico Molecular Biology Lab (iMBL), Department of Biotechnology, JIIT Noida.
 
-Modeled on the information architecture of a typical academic lab site (e.g. Dhanjal Lab): Home with latest updates and contact, plus People, Research, Publications, Teaching, Opportunities, News, and Contact.
-
 ## Pages
 
 | File | Purpose |
